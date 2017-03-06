@@ -7,9 +7,9 @@
 
 ### node IPs and roles
 * CM/Edge + Master1: 	ec2-54-93-77-231.eu-central-1.compute.amazonaws.com
-* Master2:  		ec2-54-93-43-116.eu-central-1.compute.amazonaws.com
+* Master2:  		ec2-52-59-245-86.eu-central-1.compute.amazonaws.com	
 * Worker1: 		ec2-54-93-33-31.eu-central-1.compute.amazonaws.com
-* Worker2: 		ec2-52-59-245-86.eu-central-1.compute.amazonaws.com
+* Worker2: 		ec2-54-93-43-116.eu-central-1.compute.amazonaws.com
 * Worker3: 		ec2-52-59-195-41.eu-central-1.compute.amazonaws.com
 
 ### node/role assignment
