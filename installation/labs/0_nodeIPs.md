@@ -18,3 +18,6 @@
 * Worker1:              DN, NM, RS, HMaster 
 * Worker2:              DN, NM, RS
 * Worker3:              DN, NM, RS
+
+### accessing CM
+*http://ec2-54-93-77-231.eu-central-1.compute.amazonaws.com:7180
