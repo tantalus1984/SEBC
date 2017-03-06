@@ -21,3 +21,6 @@
 
 ### accessing CM
 * http://ec2-54-93-77-231.eu-central-1.compute.amazonaws.com:7180
+
+### accessing Hue
+* http://ec2-52-59-245-86.eu-central-1.compute.amazonaws.com:8888
