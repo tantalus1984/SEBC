@@ -1,9 +1,9 @@
 ### cluster architecture considerations
-*we are running 5 nodes
-*let's do the best out of it (not recommended for prod!)
-*let's use 2x master, 3x worker
-*let's also deploy CM + Hue on first master
-*let's furthermore use one worker for the third ZK and JN later
+* we are running 5 nodes
+* let's do the best out of it (not recommended for prod!)
+* let's use 2x master, 3x worker
+* let's also deploy CM + Hue on first master
+* let's furthermore use one worker for the third ZK and JN later
 
 ### node IPs and roles
 * CM/Edge + Master1: 	ec2-54-93-77-231.eu-central-1.compute.amazonaws.com
@@ -20,4 +20,4 @@
 * Worker3:              DN, NM, RS
 
 ### accessing CM
-*http://ec2-54-93-77-231.eu-central-1.compute.amazonaws.com:7180
+* http://ec2-54-93-77-231.eu-central-1.compute.amazonaws.com:7180
