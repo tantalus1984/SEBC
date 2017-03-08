@@ -1,3 +1,6 @@
+### add tantalus1984 to sentry admins in CM
+* add "tantalus1984" to "sentry.service.admin.group"
+
 ### start beeline
 * beeline
 * !connect jdbc:hive2://ip-172-31-27-141.eu-central-1.compute.internal:10000/default;principal=hive/ip-172-31-27-141.eu-central-1.compute.internal@EXAMPLE.COM
