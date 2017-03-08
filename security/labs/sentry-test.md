@@ -75,6 +75,7 @@ groupadd selector
 groupadd inserters
 useradd -u 1100 -g selector george
 useradd -u 1200 -g inserters ferdinand
+```
 
 ### change password for george and ferdinand
 * passwd george
