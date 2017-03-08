@@ -45,7 +45,6 @@ INFO  : Starting task [Stage-0:DDL] in serial mode
 INFO  : Completed executing command(queryId=hive_20170308110707_a8d94ac6-e9e2-47a4-8b39-bda0ab2af43b); Time taken: 0.082 seconds
 INFO  : OK
 No rows affected (0.142 seconds)
-
 ```
 
 ### show tables
