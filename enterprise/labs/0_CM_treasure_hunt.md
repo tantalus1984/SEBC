@@ -23,7 +23,7 @@
 * Hive WebHCat Server
 
 ### What steps must be completed before integrating Cloudera Manager with Kerberos?
-# it is recommended to configure Lev-1 security, since CM will generate keytabs and push them down to the nodes via CM agents
+* it is recommended to configure Lev-1 security, since CM will generate keytabs and push them down to the nodes via CM agents
 * non-zero ticket lifetime and renewal lifetime should be supported by KDC
 * create an OU and an admin principal within this OU in your KDC (e.g., AD)
 * the admin princiapl is used by CM to generate the remaining service principals under the OU
