@@ -90,7 +90,6 @@ kadmin.local -q "change_password -pw cloudera ferdinand"
 
 ### create reads role
 ```
-Transaction isolation: TRANSACTION_REPEATABLE_READ
 0: jdbc:hive2://ip-172-31-27-141.eu-central-1> CREATE ROLE reads;
 INFO  : Compiling command(queryId=hive_20170308112929_e7106330-d821-4f77-a48e-00c45aaa1fdd): CREATE ROLE reads
 INFO  : Semantic Analysis Completed
@@ -143,7 +142,8 @@ No rows affected (0.086 seconds)
 ```
 
 ### Grant read privilege for default.sample07 only to 'writes'
-```0: jdbc:hive2://ip-172-31-27-141.eu-central-1> REVOKE ALL ON DATABASE default FROM ROLE writes;
+```
+0: jdbc:hive2://ip-172-31-27-141.eu-central-1> REVOKE ALL ON DATABASE default FROM ROLE writes;
 INFO  : Compiling command(queryId=hive_20170308113333_f39d1fb2-e238-48df-bda9-1e01f520d299): REVOKE ALL ON DATABASE default FROM ROLE writes
 INFO  : Semantic Analysis Completed
 INFO  : Returning Hive schema: Schema(fieldSchemas:null, properties:null)
