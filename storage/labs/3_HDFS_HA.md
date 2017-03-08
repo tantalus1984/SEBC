@@ -1,2 +1,3 @@
 ### enable automatic NameNode failover
-* dfs.ha.automatic-failover.enabled=true
+* in CM under HDFS -> Configuration
+* ```dfs.ha.automatic-failover.enabled=true```
