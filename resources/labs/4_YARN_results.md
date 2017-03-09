@@ -26,7 +26,7 @@
 
 
 ### Interpretation
-* teragen is completely disk I/O-bound. teragen is a map-only MR job.  Adding more mappers adds in to parallelism and reduces execution time.
+* teragen is completely disk I/O-bound. teragen is a map-only MR job.  Adding more mappers adds in to parallelism and reduces execution time. Starting mappers with more memory then necessary only limits the number of mappers that can be run in parallel, since total YARN memory is limited.
 * It was found that teragen does not benefit from > 2 mappers in this cluster. The reason for this might be the disk I/O boundness. There is only three worker nodes with 1xSSD each. It appears that two mappers are already able to completely saturate the SSDs of the worker. 
 * terasort - other than teragen - has a reduce phase. Addign more mappers and more reducers adds in to parallelism and reduces execution time.
 * It was found that terasort does not benefit from > 2 mappers >2 reducers in this cluster. The reason for this might again be the disk I/O boundness and the 1xSSD per worker node. It is again assumed that two mappers and 2 reducers are able to completeley saturate the SSDs of the worker. One might ask why there is room for additional two reducers when teragen alrady showd that two mappers completely saturate the SSDs. The answer is that the reducers in terasort are launched just after the map phase. Of course, in bigger clusters, some reducers might start while the map phase is still ongoing (if at least one mapper has finished). However, this effect is not visible in this cluster, because the cluster is too small.
