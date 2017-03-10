@@ -53,3 +53,50 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/xvda1       30G  2.1G   26G   8% /
 ```
 
+### yum repolist enabled
+```
+[root@ip-172-31-20-21 ec2-user]# yum repolist enabled
+Failed to set locale, defaulting to C
+Loaded plugins: amazon-id, rhui-lb, security
+repo id                                                                             repo name                                                                                                         status
+rhui-REGION-client-config-server-6                                                  Red Hat Update Infrastructure 2.0 Client Configuration Server 6                                                       3
+rhui-REGION-rhel-server-releases                                                    Red Hat Enterprise Linux Server 6 (RPMs)                                                                          18558
+rhui-REGION-rhel-server-rh-common                                                   Red Hat Enterprise Linux Server 6 RH Common (RPMs)                                                                  129
+repolist: 18690
+
+[root@ip-172-31-23-106 ec2-user]# yum repolist enabled
+Failed to set locale, defaulting to C
+Loaded plugins: amazon-id, rhui-lb, security
+repo id                                                                             repo name                                                                                                         status
+rhui-REGION-client-config-server-6                                                  Red Hat Update Infrastructure 2.0 Client Configuration Server 6                                                       3
+rhui-REGION-rhel-server-releases                                                    Red Hat Enterprise Linux Server 6 (RPMs)                                                                          18558
+rhui-REGION-rhel-server-rh-common                                                   Red Hat Enterprise Linux Server 6 RH Common (RPMs)                                                                  129
+repolist: 18690
+
+[root@ip-172-31-20-100 ec2-user]# yum repolist enabled
+Failed to set locale, defaulting to C
+Loaded plugins: amazon-id, rhui-lb, security
+repo id                                                                             repo name                                                                                                         status
+rhui-REGION-client-config-server-6                                                  Red Hat Update Infrastructure 2.0 Client Configuration Server 6                                                       3
+rhui-REGION-rhel-server-releases                                                    Red Hat Enterprise Linux Server 6 (RPMs)                                                                          18558
+rhui-REGION-rhel-server-rh-common                                                   Red Hat Enterprise Linux Server 6 RH Common (RPMs)                                                                  129
+repolist: 18690
+
+[root@ip-172-31-19-63 ec2-user]# yum repolist enabled
+Failed to set locale, defaulting to C
+Loaded plugins: amazon-id, rhui-lb, security
+repo id                                                                             repo name                                                                                                         status
+rhui-REGION-client-config-server-6                                                  Red Hat Update Infrastructure 2.0 Client Configuration Server 6                                                       3
+rhui-REGION-rhel-server-releases                                                    Red Hat Enterprise Linux Server 6 (RPMs)                                                                          18558
+rhui-REGION-rhel-server-rh-common                                                   Red Hat Enterprise Linux Server 6 RH Common (RPMs)                                                                  129
+repolist: 18690
+
+[root@ip-172-31-17-194 ec2-user]# yum repolist enabled
+Failed to set locale, defaulting to C
+Loaded plugins: amazon-id, rhui-lb, security
+repo id                                                                             repo name                                                                                                         status
+rhui-REGION-client-config-server-6                                                  Red Hat Update Infrastructure 2.0 Client Configuration Server 6                                                       3
+rhui-REGION-rhel-server-releases                                                    Red Hat Enterprise Linux Server 6 (RPMs)                                                                          18558
+rhui-REGION-rhel-server-rh-common                                                   Red Hat Enterprise Linux Server 6 RH Common (RPMs)                                                                  129
+repolist: 18690
+```
