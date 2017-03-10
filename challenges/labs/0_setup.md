@@ -100,3 +100,15 @@ rhui-REGION-rhel-server-releases                                                
 rhui-REGION-rhel-server-rh-common                                                   Red Hat Enterprise Linux Server 6 RH Common (RPMs)                                                                  129
 repolist: 18690
 ```
+
+### adding users-> groups ronaldo->barca and neymar->merengues
+```
+[root@ip-172-31-20-21 ec2-user]# cat /etc/passwd | grep ronaldo
+ronaldo:x:2016:2016::/home/ronaldo:/bin/bash
+[root@ip-172-31-20-21 ec2-user]# cat /etc/passwd | grep neymar
+neymar:x:2010:2010::/home/neymar:/bin/bash
+[root@ip-172-31-20-21 ec2-user]# cat /etc/group | grep barca
+barca:x:3016:ronaldo
+[root@ip-172-31-20-21 ec2-user]# cat /etc/group | grep merengues
+merengues:x:3010:neymar
+```
